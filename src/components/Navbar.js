@@ -27,7 +27,7 @@ class Navbar extends Component{
                </li>
 
                <li className="nav-item">
-                    <a className ="btn btn-outline-success my-2 my-sm-0" href="http://localhost:3000/newMovie">Agregar pelicula</a>
+                    <a className ="btn btn-outline-success my-2 my-sm-0" href="http://imdevf.herokuapp.com/newMovie">Agregar pelicula</a>
                    
                </li>
                </ul>
