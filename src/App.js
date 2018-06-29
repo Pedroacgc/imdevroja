@@ -6,6 +6,7 @@ import axios from 'axios'
 import newMovie from './components/newMovie';
 import Home from './components/Home';
 import {BrowserRouter, Route} from 'react-router-dom';
+import moviePreview from './components/moviePreview';
 
 
 class App extends Component {
@@ -32,6 +33,8 @@ class App extends Component {
        <Route exact path="/" component={Home}/>
        <Route exact path="/newMovie" component={newMovie}/>
        <Route exact path="/movie" component={Movie}/>
+       <Route exact path="/moviep" component={moviePreview}/>
+
       </main>
   </BrowserRouter>   
   
