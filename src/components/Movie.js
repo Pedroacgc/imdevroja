@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 
-class movie extends Component{
+class Movie extends Component{
 
    constructor(props){
        super(props);
@@ -9,8 +9,8 @@ class movie extends Component{
 
    render(){
        return (
-           <div>
-           <a href=''>
+           <div className="movie">
+           <a href={'http://localhost:3000/moviep/'+this.props._id}>
            <div className="container">
     <div className="row flex-column-reverse flex-md-row">
         <div className="col-md-5">
@@ -26,7 +26,7 @@ class movie extends Component{
                            <i className="fa fa-star" aria-hidden="true"></i> 
                            <p>{this.props.anio}</p>
                         </div>
-                        <div className="col-8 metadata">Adventure. Sci-Fi</div>
+                        <div className="col-8 metadata">{this.props.genero}</div>
                      </div>
                   </div>      
                   <p className="card-text">{this.props.sinopsis}}</p>
@@ -46,4 +46,4 @@ class movie extends Component{
    }
 }
 
-export default movie
+export default Movie

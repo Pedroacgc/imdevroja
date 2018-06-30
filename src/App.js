@@ -8,7 +8,7 @@ import Home from './components/Home';
 import Home2 from './components/Home2';
 import {BrowserRouter, Route} from 'react-router-dom';
 import moviePreview from './components/moviePreview';
-
+import Login from './components/Login'
 
 class App extends Component {
 
@@ -35,7 +35,8 @@ class App extends Component {
        <Route exact path="/newMovie" component={newMovie}/>
        <Route exact path="/movie" component={Movie}/>
        <Route exact path="/movieSearch/:uid" component={Home2}/>
-       <Route exact path="/moviep" component={moviePreview}/>
+       <Route exact path="/moviep/:uid" component={moviePreview}/>
+       <Route exact path="/Login" component={Login}/>
 
       </main>
   </BrowserRouter>   

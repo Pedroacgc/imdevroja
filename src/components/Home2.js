@@ -8,7 +8,7 @@ class Home2 extends Component{
   constructor(props){
       super(props);
       this.state={
-       movies:[]
+       movies:undefined
       }
   }
 
@@ -24,12 +24,11 @@ class Home2 extends Component{
 
 
    updateMovie(){
-    if (this.state.movies.length == 0){
+     console.log(this.state.movies)
+    if (this.state.movies == undefined){
       return <div className ="loader centro"></div>
     }else{
-      return this.state.movies.map(element =>{
-        return <Movie nombre={element.nombre} anio={element.anio} sinopsis={element.sinopsis} portada={element.portada}/>
-      })
+        return <Movie _id={this.state.movies._id} nombre={this.state.movies.nombre} anio={this.state.movies.anio} sinopsis={this.state.movies.sinopsis} portada={this.state.movies.portada}/>
      
     }
     }

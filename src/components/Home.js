@@ -28,7 +28,7 @@ class Home extends Component{
        return <div className ="loader centro"></div>
      }else{
        return this.state.movies.map(element =>{
-         return <Movie nombre={element.nombre} anio={element.anio} sinopsis={element.sinopsis} portada={element.portada}/>
+         return <Movie _id={element._id} nombre={element.nombre} anio={element.anio} sinopsis={element.sinopsis} portada={element.portada} genero={element.genero}/>
        })
        
      }
