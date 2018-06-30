@@ -38,7 +38,7 @@ class Home extends Component{
        return (
            <div className='Home'>
            <Navbar/>
-            <h1>peliculas</h1>
+            <div className="peliculas">peliculas</div>
             <div className='row'>{this.updateMovie()}</div>
 
         

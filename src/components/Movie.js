@@ -30,9 +30,6 @@ class Movie extends Component{
                      </div>
                   </div>      
                   <p className="card-text">{this.props.sinopsis}}</p>
-                  <a className="trailer-preview" href='' target="new">
-                     <i className="fa fa-play" aria-hidden="true"></i>
-                     </a>
                </div>
             </div>
         </div>

@@ -27,7 +27,17 @@ class MovieFile extends Component{
       <iframe width="750" height="500" src={link} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
       <div>
-          <Commments/>
+      <Commments nombre={this.props.nombre}
+                         duracion={this.props.duracion}
+                         director={this.props.director}
+                         genero={this.props.genero}
+                         actores={this.props.actores}
+                         premios={this.props.premios}
+                         clasificacion={this.props.clasificacion}
+                         anio={this.props.anio}
+                         sinopsis={this.props.sinopsis}
+                         portada={this.props.portada}
+                         video={this.props.video}/>
     </div>
       </div>
 

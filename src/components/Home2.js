@@ -26,7 +26,7 @@ class Home2 extends Component{
    updateMovie(){
      console.log(this.state.movies)
     if (this.state.movies == undefined){
-      return <div className ="loader centro"></div>
+      return <div className ="loader centro container"></div>
     }else{
         return <Movie _id={this.state.movies._id} nombre={this.state.movies.nombre} anio={this.state.movies.anio} sinopsis={this.state.movies.sinopsis} portada={this.state.movies.portada}/>
      
